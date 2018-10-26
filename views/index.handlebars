@@ -17,7 +17,7 @@
   <div class="row">
     {{!-- Not Devoured --}}
     <div class="col-md-4">
-      <h2>Not Devoured</h2>
+      <h2 class="text-center">Not Devoured</h2>
       <ul>
         {{#each burger}}
         {{#unless this.devoured}}
@@ -27,15 +27,15 @@
       </ul>
     </div>
     {{!-- Form --}}
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
       <form action="" method="POST">
         <input type="text" id="burger" placeholder="Enter Your Burger">
       </form>
-      <input type="submit" id="submit-button" value="Submit">
+      <input type="submit" id="submit-button" class="btn btn-danger" value="Submit">
     </div>
     {{!-- Devoured --}}
     <div class="col-md-4">
-      <h2>Devoured</h2>
+      <h2 class="text-center">Devoured</h2>
       <ul>
         {{#each burger}}
         {{#if this.devoured}}
